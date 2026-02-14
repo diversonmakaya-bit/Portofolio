@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        }
+                    },
+                    animation: {
+                        fadeInUp: 'fadeInUp 0.6s ease-out',
+                        slideInRight: 'slideInRight 0.6s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Langeal Morelli MAKAYA MAKOSSO - Développeur Web & Designer</title>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-bold text-lg">
+                    DB 
+                </div>
+                <span class="text-xl font-bold text-gray-900">Langeal Morelli MAKAYA MAKOSSO</span>
+            </div>
+
+            <ul class="hidden md:flex gap-8 items-center text-gray-700">
+                <li><a href="#accueil" class="hover:text-blue-600 transition font-medium">Accueil</a></li>
+                <li><a href="#apropos" class="hover:text-blue-600 transition font-medium">À propos</a></li>
+                <li><a href="#expertise" class="hover:text-blue-600 transition font-medium">Expertise</a></li>
+                <li><a href="#travaux" class="hover:text-blue-600 transition font-medium">Travaux</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition font-medium">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="hidden md:inline-block px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                recruter 
+            </a>
+
+            <!-- ICONE BURGER MENU (à remplacer par <img src="votre-icone-menu.svg">) -->
+            <button class="md:hidden text-gray-700 text-2xl">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Minimaliste et épuré -->
+    <section id="accueil" class="pt-32 pb-20 px-6 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Texte -->
+            <div class="animate-fadeInUp">
+                <div class="mb-6">
+                    <!-- EMOJI ou ICONE : à remplacer par <img src="welcome-icon.svg" alt="Welcome"> -->
+                    <span class="inline-block px-5 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+                        👋 Welcome to my World
+                    </span>
+                    <h1 class="text-5xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
+                        Créez votre <span class="text-blue-600">présence digitale</span> parfaite
+                    </h1>
+                </div>
+
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Je suis Mr Morelli, développeur web et designer graphique très pationné. Je transforme vos idées en solutions web modernes, performantes et esthétiques.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#travaux" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition text-center">
+                        Voir mes travaux
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition text-center">
+                        Parlons ensemble
+                    </a>
+                </div>
+
+                <div class="mt-12 flex gap-8">
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900">10+</div>
+                        <p class="text-gray-600">Projets réalisés</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900">5+</div>
+                        <p class="text-gray-600">Ans d'expérience</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900">100%</div>
+                        <p class="text-gray-600">Satisfaction client</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image/Illustration -->
+            <div class="animate-slideInRight hidden md:block">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl blur-2xl"></div>
+                    <div class="relative bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl p-12 flex items-center justify-center h-96 text-center">
+                        
+                        <div>
+                            <div class="text-6xl mb-4"><img src="Images/الأمن السيبراني وحماية البيانات رجل أعمال باستخدام أمن شبكة الإنترنت للكمبيوتر المحمول _ التصوير JPG تحميل مجاني - Pikbest.jpg" alt="Développement & Design" class="w-full h-full object-cover rounded-3xl"></div>
+                            <p class="text-white text-lg font-semibold">Développement & Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos - Section claire et structurée -->
+    <section id="apropos" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+                    Qui suis-je ?
+                </h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gray-100 rounded-2xl p-12 flex items-center justify-center h-80">
+                        <div class="text-center">
+                            <div class="w-64 h-64">
+                            <img src="Images/IMG_6070.JPG" class="w-full h-full object-cover rounded-3x1">
+                            </div>
+                            <p class="text-gray-600">Photo de profil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">
+                        Développeur web formé à Dakar
+                    </h3>
+
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        Je suis actuellement en formation de Licence 2 en Génie Informatique. Avec (5) ans d'expérience, je maîtrise les technologies modernes pour créer des sites web performants et des designs captivants.
+                    </p>
+
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                        Mon expertise couvre le développement front-end, le design UX/UI, WordPress et le support informatique. Je travaille avec passion pour transformer vos projets en succès.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-600 mb-1">Formation</p>
+                            <p class="font-bold text-gray-900">Licence 2 - Génie Info</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-600 mb-1">Localisation</p>
+                            <p class="font-bold text-gray-900">Dakar, Sénégal</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Télécharger CV 
+                        <!-- ICONE DOWNLOAD : remplacer par <img src="download-icon.svg" alt="Télécharger" class="w-4 h-4 inline ml-2"> -->
+                        ⬇️
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise - Cards modernes -->
+    <section id="expertise" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+                    Mes Compétences
+                </h2>
+                <p class="text-gray-600 text-lg">Expertise en développement web et design</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-600 hover:shadow-lg transition">
+                    <!-- ICONE CODE : remplacer par <img src="code-icon.svg" alt="Code" class="w-10 h-10"> -->
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-4">
+                    <img src="Images/Los estafadores a menudo usan computador….jpg" alt="SFD" class="w-10 h-10"> 
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Développement Web</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <!-- ICONE CHECK : remplacer par <img src="check-icon.svg" alt="Validé" class="w-4 h-4"> -->
+                            ✓
+                            HTML5 & CSS3
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            JavaScript (ES6+)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Tailwind CSS
+                        </li>
+                        
+                        <li class="flex items-center gap-2">
+                            ✓
+                            React
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Sites Responsifs
+                        </li>
+                    </ul>
+                    <p class="text-3xl font-bold text-blue-600 mt-6">90%</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-600 hover:shadow-lg transition">
+                    <!-- ICONE WORDPRESS : remplacer par <img src="wordpress-icon.svg" alt="WordPress" class="w-10 h-10"> -->
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-4">
+                    <img src="Images/WhatsApp Image 2026-02-14 at 13.14.11 (5).jpeg" alt="WordPress" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">WordPress</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Développement Custom
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Plugins & Thèmes
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Optimisation SEO
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Réseaux et câblage
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Maintenance
+                        </li>
+                    </ul>
+                    <p class="text-3xl font-bold text-blue-600 mt-6">85%</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-600 hover:shadow-lg transition">
+                    <!-- ICONE DESIGN : remplacer par -->
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-4">
+                    <img src="Images/WhatsApp Image 2026-02-14 at 13.14.10.jpeg" alt="Design" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Graphique</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            ✓
+                            UI/UX Design
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Logos & Branding
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Infographie
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✓
+                            Flyers & Posters
+                        </li>
+                    </ul>
+                    <p class="text-3xl font-bold text-blue-600 mt-6">88%</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="mt-16 bg-white rounded-xl p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Technologies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <!-- ICONE HTML : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.10 (3).jpeg" alt="HTML5"></p>
+                        <p class="font-semibold text-gray-900 text-sm">HTML5</p>
+                    </div>
+                    <!-- ICONE CSS : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.10 (1).jpeg" alt="CSS3"></p>
+                        <p class="font-semibold text-gray-900 text-sm">CSS3</p>
+                    </div>
+                    <!-- ICONE JS : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.10 (8).jpeg" alt="JavaScript"></p>
+                        <p class="font-semibold text-gray-900 text-sm">JavaScript</p>
+                    </div>
+                    <!-- ICONE TAILWIND : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.11 (6).jpeg" alt="Tailwind"></p>
+                        <p class="font-semibold text-gray-900 text-sm">Tailwind</p>
+                    </div>
+                    <!-- ICONE WORDPRESS : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.16.jpeg" alt="WordPress"></p>
+                        <p class="font-semibold text-gray-900 text-sm">WordPress</p>
+                    </div>
+                    <!-- ICONE GSAP : remplacer par -->
+                    <div class="bg-gray-50 rounded-lg p-4 text-center hover:bg-blue-50 transition">
+                        <p class="text-3xl mb-2"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.11 (4).jpeg" alt="GSAP"></p>
+                        <p class="font-semibold text-gray-900 text-sm">GSAP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expérience & Formation -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4 text-center">
+                Parcours
+            </h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-16"></div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Expérience -->
+                <div>
+                    <!-- ICONE BRIEFCASE : remplacer par <img src="briefcase-icon.svg" alt="Expérience" class="w-6 h-6"> -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-2">
+                        💼
+                        Expérience
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-6 pb-6">
+                            <p class="text-sm text-blue-600 font-semibold mb-1">2022 - Présent</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Stage - Assistance IT & Développement</h4>
+                            <p class="text-gray-700">L'IRA (Informatique Bureautique)</p>
+                            <p class="text-sm text-gray-600 mt-2">Support informatique, développement WordPress et infographie</p>
+                        </div>
+                        <div class="border-l-4 border-gray-300 pl-6 pb-6">
+                            <p class="text-sm text-gray-600 font-semibold mb-1">2019 - 2022</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Agent Commercial</h4>
+                            <p class="text-gray-700">E-commerce en ligne</p>
+                            <p class="text-sm text-gray-600 mt-2">Gestion des transactions numériques</p>
+                        </div>
+                         <div class="border-l-4 border-gray-300 pl-6 pb-6">
+                            <p class="text-sm text-gray-600 font-semibold mb-1">2017 - 2018</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Agent de Transfert d'Argent</h4>
+                            <p class="text-gray-700">Multiservic</p>
+                            <p class="text-sm text-gray-600 mt-2">Gestion des paiements et transferts numériques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation -->
+                <div>
+                    <!-- ICONE GRADUATION : remplacer par <img src="graduation-icon.svg" alt="Formation" class="w-6 h-6"> -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-2">
+                        🎓
+                        Formation
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-6 pb-6">
+                            <p class="text-sm text-blue-600 font-semibold mb-1">2025 - 2026</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Licence 2 - Génie Informatique</h4>
+                            <p class="text-gray-700">Univers Professionnel (UNIPRO)</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-6 pb-6">
+                            <p class="text-sm text-blue-600 font-semibold mb-1">2024 - 2025</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Licence 1 - Génie Informatique</h4>
+                            <p class="text-gray-700">Univers Professionnel (UNIPRO)</p>
+                        </div>
+                        <div class="border-l-4 border-gray-300 pl-6 pb-6">
+                            <p class="text-sm text-gray-600 font-semibold mb-1">2021 - 2022</p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Baccalauréat Série D</h4>
+                            <p class="text-gray-700">Lycée Michel Guembela</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Travaux -->
+    <section id="travaux" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+                    Mes Travaux
+                </h2>
+                <p class="text-gray-600 text-lg">Découvrez mes projets récents</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl transition group">
+                    <!-- IMAGE PROJET 1 : remplacer par  -->
+                    <div class="relative h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl opacity-30"><img src="Images/🚨 Microsoft 365 Copilot s’installe de force, mais….jpg" alt="Site Web Responsif" class="w-full h-64 object-cover"></div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                            <!-- ICONE FLECHE : remplacer par <img src="arrow-icon.svg" alt="Voir plus" class="w-8 h-8"> -->
+                            <span class="text-white text-3xl opacity-0 group-hover:opacity-100 transition">→</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Site Web Responsif</h3>
+                        <p class="text-gray-600 mb-4">Site vitrine moderne avec HTML5, CSS3 et JavaScript</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl transition group">
+                    <!-- IMAGE PROJET 2 : remplacer par  -->
+                    <div class="relative h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl opacity-30"><img src="Images/50 WordPress tutorial.jpg" alt="Site WordPress Custom" class="w-full h-64 object-cover"></div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                            <span class="text-white text-3xl opacity-0 group-hover:opacity-100 transition">→</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Site WordPress Custom</h3>
+                        <p class="text-gray-600 mb-4">Site d'entreprise avec WordPress et plugins personnalisés</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">WordPress</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">PHP</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl transition group">
+                    <!-- IMAGE PROJET 3 : remplacer par  -->
+                    <div class="relative h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl opacity-30"><img src="Images/Мафия логотип Premium векторы _ Premium Vector….jpg" alt="Branding & Logo" class="w-full h-64 object-cover"></div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                            <span class="text-white text-3xl opacity-0 group-hover:opacity-100 transition">→</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Branding & Logo</h3>
+                        <p class="text-gray-600 mb-4">Identité visuelle complète : logo, charte graphique et supports</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Logo</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Branding</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl transition group">
+                    <!-- IMAGE PROJET 4 : remplacer par -->
+                    <div class="relative h-64 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center overflow-hidden">
+                        <div class="text-6xl opacity-30"><img src="Images/Learning Web Design_ How To Get Started And Not….jpg" alt="Application Web" class="w-full h-64 object-cover"></div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                            <span class="text-white text-3xl opacity-0 group-hover:opacity-100 transition">→</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Application Web</h3>
+                        <p class="text-gray-600 mb-4">Plateforme interactive avec interface moderne et responsive</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">Frontend</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">Design</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Voir plus de projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                Prêt à commencer votre projet ?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Contactez-moi pour discuter de vos idées et transformer votre vision en réalité
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur">
+                    <!-- ICONE EMAIL : remplacer par -->
+                    <div class="text-3xl mb-4 block"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.11 (1).jpeg" alt="Email" class="w-8 h-8"></div>
+                    <p class="text-sm text-blue-100 mb-2">Email</p>
+                    <a href="mailto:Diagnisko21@gmail.com" class="font-bold text-white hover:text-blue-100 transition">
+                        diversonmakaya@gmail.com
+                    </a>
+                </div>
+                <!-- ICONE PHONE : remplacer  -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur">
+                    <div class="text-3xl mb-4 block"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.11 (7).jpeg" alt="Téléphone" class="w-8 h-8"></div>
+                    <p class="text-sm text-blue-100 mb-2">Téléphone</p>
+                    <a href="tel:+221781332323" class="font-bold text-white hover:text-blue-100 transition">
+                        +221 76 151 52 98
+                    </a>
+                </div>
+                <!-- ICONE LOCATION : remplacer par -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur">
+                    <div class="text-3xl mb-4 block"><img src="Images/WhatsApp Image 2026-02-14 at 13.14.11.jpeg" alt="Localisation" class="w-8 h-8"></div>
+                    <p class="text-sm text-blue-100 mb-2">Localisation</p>
+                    <p class="font-bold text-white">Dakar, Sénégal</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 md:p-12 text-gray-900">
+                <h3 class="text-2xl font-bold mb-8">Envoyer un message</h3>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        <input type="email" placeholder="Votre email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                    </div>
+                    <input type="text" placeholder="Sujet" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                    <textarea rows="5" placeholder="Votre message..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 resize-none"></textarea>
+                    <button type="submit" class="w-full px-8 py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                        <!-- ICONE SEND : remplacer par <img src="send-icon.svg" alt="Envoyer" class="w-5 h-5"> -->
+                        ✈️
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-white text-lg mb-4">Langeal Morelli MAKAYA MAKOSSO</h4>
+                    <p>Développeur web & designer graphique</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-lg mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#apropos" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="#expertise" class="hover:text-white transition">Expertise</a></li>
+                        <li><a href="#travaux" class="hover:text-white transition">Travaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-lg mb-4">Réseaux</h4>
+                    <div class="flex gap-4">
+                        <!-- ICONE GITHUB : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/WhatsApp Image 2026-02-14 at 13.14.10 (6).jpeg" alt="GitHub">
+                        </a>
+                        <!-- ICONE LINKEDIN : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/Linkedin logo vector, Linkedin symbol, Linkedin….jpg" alt="LinkedIn">
+                        </a>
+                        <!-- ICONE INSTA : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/Instargram logo.jpg" alt="Insta">
+                        </a>
+                        <!-- ICONE facebook : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/redes sociais.jpg" alt="LinkedIn">
+                        </a>
+                        <!-- ICONE Whatsapp : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/Free Icon _ Whatsapp.jpg" alt="LinkedIn">
+                        </a>
+                        <!-- ICONE Snapchat : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/Decorate laptops, Hydro Flasks, cars and more with….jpg" alt="LinkedIn">
+                        </a>
+                        <!-- ICONE TWITTER : remplacer par -->
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <img src="Images/Follow us on Twitter! @Andrew Keene.jpg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>©️ Langeal Morelli MAKAYA MAKOSSO. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
